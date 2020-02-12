@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>BOOTSTRAP FORM</title>
+</head>
+
+
+<header>
+  <nav class="navbar">
+    
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TO THE NEW</a>
+    </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>QuickHelp</a></li>
+    </ul>
+  </div>
+  <hr>
+  </nav>
+</header>
+<body>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+ 
+    <div class="panel panel-default">
+    <div class="panel-heading" style="background-color: #d3d3d3"><h2>Bug Report</h2></div>
+    <div class="panel-body">
+    	
+  	<form >
+  <div class="form-group">
+    <label for="titlle">Title*:</label>
+    <input type="text" class="form-control" placeholder="Enter title" required="true">
+   <label for="exampleFormControlTextarea1">Description*:</label>
+    <textarea class="form-control"  rows="3" placeholder="Enter Description" required="true"></textarea>
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Operating SystemS</label>
+    <select class="form-control" style="background-color: lightgreen">
+      <option>Linux</option>
+      <option>Windows XP</option>
+      <option>Windows 7</option>
+      <option>Windows 10</option>
+      <option>Mac IOS</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Product:</label>
+    <select class="form-control" id="exampleFormControlSelect2" style="background-color: lightgreen">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
+    <label for="exampleInputtext1">Version*:</label>
+    <input type="text" class="form-control" placeholder="Enter Version" required="true">
+
+   <label for="exampleInputtext1">License:</label>
+    <br>
+  <label class="radio-inline"><input type="radio" name="optradio" checked>Free</label>
+  <label class="radio-inline"><input type="radio" name="optradio">Business</label><br><br>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect3">Severity:</label>
+    <select class="form-control" style="background-color: lightgreen">
+      <option>Low</option>
+      <option>Moderate</option>
+      <option>High</option>
+      <option>Critical</option>
+      </select>
+  </div>
+
+  <div class="form-group" style="position: relative;">
+   
+    <input type="file" class="form-control" id="ControlFile" style="display: none;" >
+     <label for="ControlFile">Attachment:
+     <span class="form-control" style="top:20px; left:0px; position:absolute;"></span>
+     <span class="btn btn-success" style="position: absolute; top: 20px; right: 0px;">Choose File</span>
+     </label>
+  </div>
+    </form>
+  </div>
+   <div class="panel-footer clearfix" style="background-color: lightgrey; "">
+      <a href="#" class="btn btn-success" role="button" type="submit" style="float: right;">Send</a>
+       
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
