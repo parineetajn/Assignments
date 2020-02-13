@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Interest Calculator</title>
+	<script type="text/javascript">
+		function simpleI()
+		{
+			var p,r,t,SI;
+			p=parseFloat(prompt("Please enter Principle Amount: "));
+			r=parseFloat(prompt("Please enter Rate: "));
+			t=parseFloat(prompt("Please enter Time: "));
+			SI= (p*r*t)/100;
+			document.write("Simple Interest Calculated is:"+SI);
+		}
+	</script>
+</head>
+<body>
+<center>
+	<input type="button" name="btn" value="Calculate S.I." onclick="simpleI()"/>
+</center>
+</body>
+</html>
