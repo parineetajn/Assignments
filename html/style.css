@@ -1,0 +1,122 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+select{
+	width:90%;
+	padding: 10px 10px;
+  	margin-left: 15px;
+  	margin-right: 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-style: verdana;
+	font-size: 15px;
+}
+ input[type=text]
+ {
+	width:90%;
+	padding: 20px 20px;
+  	margin-left: 15px;
+  	margin-right: 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-style: verdana;
+	font-size: 15px;
+ }
+ input[type="radio"]
+ { padding: 20px 20px;
+  margin-left: 15px;
+  margin-right: 0px;}
+
+ textarea{
+ 	width:90%;
+	padding: 20px 20px;
+  	margin-left: 15px;
+  	margin-right: 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-style: verdana;
+	font-size: 15px;
+ }
+
+ input[type=submit]:hover {
+  background-color: #45a049;
+
+} 
+
+label{
+	padding: 10px 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  font-style: verdana;
+  font-size: 15px;
+}
+.container{
+	width: 400px;
+    height:780px;
+    border: 1px solid blue;
+    margin-left: 300px;
+      margin-right: 300px;
+      padding: 0px 0px;
+    border-radius: 8px;/*
+    align-items: : center;*/
+     margin: 0 auto;
+
+}
+.topnav-right {
+  float: right;
+}
+.header{
+	overflow: hidden;
+	padding: 10px 10px;
+	color: #205959;
+}
+.header a {
+  float: left;
+  color: #5c718a;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  border-radius: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  
+  }
+  .input-menu {
+  	background-color:#40d6d6;
+  }
+  .input-menu {
+  	color:white;
+  }
+  .try{
+  	height: 60px;
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #d3d3d3;
+  }
+  .try h2{
+  	padding: 5px;
+  	border-radius: 25px;
+  }
+
+  .submit{
+  	float:right;
+  	background-color: #40d6d6;
+  	padding:8px;
+  	margin: 4px;
+  	border-radius: 8px;
+
+  }
+
+
+.astrix{
+	color: red;
+}
