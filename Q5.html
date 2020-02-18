@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="first"></p>
+<script type="text/javascript">
+	var employee = [
+    { "Name" : " Pari Jain", "Age":"23" ,"Salary":"6000", "DOB:": "21/12/1996" },
+     { "Name" : " Atul Mittal", "Age":"19" ,"Salary":"500", "DOB:": "06/10/1995" },
+      { "Name" : " Sarita Chauhan", "Age":"32" ,"Salary":"3200", "DOB:": "02/02/1990" },
+       { "Name":  " Anubha Jha", "Age":"21" ,"Salary":"550", "DOB:": "28/03/2000" }
+   ];
+
+//part 2
+var fil = employee.filter(function(S) {
+	return S.Salary>5000;
+});
+document.write("<b>All Employees details with salary >5000:</b><br>");
+for(var i in fil)
+{
+	document.write("Name: "+fil[i].Name +"<br>");
+}
+
+
+//part 3
+document.write("<br><br><b>Grouping Employees details by age:</b><br>");
+
+var fil1 = employee.filter(function(S) {
+	return S.Age<=20;
+});
+document.write("<u>Name less than 20: </u><br>");
+for(var l in fil1)
+{
+		document.write(fil1[l].Name +"<br>");
+}
+
+var fil2 = employee.filter(function(S) {
+	return (S.Age>20 && S.Age<30) ;
+});
+document.write("<u>Name greater than 20 and less than 30: </u><br> ");
+for(var k in fil2)
+{
+		document.write(fil2[k].Name +"<br>");
+}
+
+var fil3 = employee.filter(function(S) {
+	return S.Age>30;
+});
+document.write("<u>Name  greater than 30: </u><br> ");
+for(var j in fil3)
+{
+		document.write(fil3[j].Name +"<br>");
+}
+
+
+//part4
+document.write("<br><br><b>employees with salary less than 1000 and age greater than 20:</b><br>");
+var fil4 = employee.filter(function(S) {
+	return (S.Salary<1000 && S.Age>20 );
+});
+for(var o in fil4)
+{
+	document.write("Name: "+fil4[o].Name + " Salary befor increment: "+fil4[o].Salary+"<br>");
+	fil4[o].Salary=fil4[o].Salary*5;
+	document.write("Name:  "+fil4[o].Name + " Salary after increment: "+fil4[o].Salary+"<br>");
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
