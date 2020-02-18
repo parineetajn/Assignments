@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>Gallery</title>
+<style>
+.item {
+  grid-area: 1/1/span 1/span 4;
+}
+.item0 {
+	height: 100px;
+	grid-area: 2/1/span 1/ span 4;
+	background-color: lightgrey;
+}
+.item1{
+	width:240px; 
+}
+.navbar-custom { 
+            background-color: black;
+            }
+  
+ .nav-link{
+ 	color: white;
+ } 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  grid-row-gap: 20px;
+   grid-column-gap: 20px;
+   grid-template-areas: repeat(myArea myArea myArea myArea);
+   /*grid-template-areas: 'myArea1 myArea1 myArea1 myArea1';*/
+  background-color: white;
+  height: 750px;
+  padding: 50px;
+}
+
+.grid-container > div {
+  background-color:#242423;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  height: 200px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+
+<body style="background-color: #242423">
+	<div class="container" ">
+    <div class="row">
+    <div class="col-md-0"></div>
+    <div class="col-md-12">
+    	<h2 style="color:white;font-size: 25px;">TO THE NEW</h2>
+	<div class="navbar navbar-custom" >
+		
+	<nav class="navbar navbar-expand-sm " >
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+  		<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Text Link </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Text Link </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Text Link </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Text Link </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Text Link </a>
+      </li>
+    </ul>
+</div>
+
+	</nav>
+</div>
+
+<div class="grid-container" ml-5 mr-5>
+			<div class="item">960X360px</div>
+			<div class="item0 h-5 d-inline-block" style="height:100px; background-color: #a6a398; font-size: 15px;">This is a layout using Bootstrap</div>
+			
+			<h4 >Latest from Library</h4>
+			<hr>
+			<hr>
+			<br><br>
+
+			<div class="item1">125X315px</div>
+  			<div class="item1">125X315px</div>
+  			<div class="item1">125X315px</div>  
+ 			 <div class="item1">125X315px</div>
+ 			 <div class="item2 h-25 d-inline-block" style="background-color: #a6a398; font-size: 15px;">image caption here</div>
+  			<div class="item2 h-25 d-inline-block"  style="background-color: #a6a398; font-size: 15px;">image caption here</div>
+  			<div class="item2 h-25 d-inline-block"  style="background-color: #a6a398; font-size: 15px;">image caption here</div>  
+ 			 <div class="item2 h-25 d-inline-block"  style="background-color: #a6a398; font-size: 15px;">image caption here</div>
+</div>
+  </div>
+</div>
+<footer class="page-footer font-small pt-4">
+
+  <div class="container-fluid ">
+<div class="footer-copyright text-left ml-5" style="color:white"> Copyright© 2000-2020- All Rights Reserved-To The New<span class="mr-10"style="float:right; color:white;"> Web layout by To The NEW </span></div>
+	      </div>
+  </footer>
+</div>
+</body>
+</html>
