@@ -1,0 +1,53 @@
+class ShowDatePlugin implements Plugin<Project> {
+            @Override
+            void apply(Project project){
+                project.task('showDate',type: ShowDate)
+
+            }
+}
+
+group 'info.assignment'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: ShowDatePlugin
+
+sourceCompatibility = 1.8
+
+jar{
+    manifest{
+        attributes(
+                'Main-Class' :'displayHello'
+        )
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12' //The dependencies required to compile the test source of the project. By default, it includes compiled production classes and the compile time dependencies.
+    compile 'joda-time:joda-time:2.10.5' //The dependencies required to compile the production source of the project
+    runtime 'joda-time:joda-time:2.10.5' //The dependencies required by the production classes at runtime. By default, also includes the compile time dependencies
+    testRuntime group: 'junit', name: 'junit', version: '4.12' //The dependencies required to run the tests. By default, it includes runtime and test compile dependencies
+}
+
+class ShowDate extends DefaultTask {
+
+    String dateMessage = 'Current date: '
+
+    @TaskAction
+    void showDate() {
+        println ""
+        println dateMessage + new Date()
+        println ""
+    }
+}
+
+task customShowDate(type: ShowDate){
+    dateMessage= 'Custom current Date is: '
+}
+
+wrapper {
+    version='4.2.1'
+}
