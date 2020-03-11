@@ -31,15 +31,16 @@ public class EmployeeController {
     }
 
     @GetMapping("/Employees/{id}")
-    public EntityModel<Employee> getEmployeeById(@PathVariable int id) {
+    public Employee getEmployeeById(@PathVariable int id) {
         Employee employee = service.findOneEmployee(id);
         if (employee == null)
             throw new EmployeeNotFoundException("id: " + id);
 
-        EntityModel<Employee>  resource = new EntityModel<>(employee);
+        /*EntityModel<Employee>  resource = new EntityModel<>(employee);
         ControllerLinkBuilder linkTo = ControllerLinkBuilder.linkTo(methodOn(this.getClass()).getAllEmployees());
         resource.add(linkTo.withRel("all-employees"));
-        return resource;
+        return resource;*/
+        return employee;
     }
 
     @PostMapping("/Employees")
