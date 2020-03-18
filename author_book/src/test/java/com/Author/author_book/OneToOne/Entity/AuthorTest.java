@@ -18,7 +18,7 @@ class AuthorTest {
 
     //Q4
     @Test
-    public void testCreateEmployee(){
+    public void testCreateAuthor(){
 
         Author author1 =  new Author();
         author1.setName("Parineeta Jain");
