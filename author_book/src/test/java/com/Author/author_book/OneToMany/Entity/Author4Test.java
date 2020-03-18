@@ -22,7 +22,7 @@ class Author4Test {
     private Author4Repository author4Repository;
 
     @Test
-    public void testCreateEmployee() {
+    public void testCreateAuthor() {
 
         Author4 author1 = new Author4();
         author1.setName("Parineeta Jain");
